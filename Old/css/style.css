@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Poppins:wght@200;300;400;500;700&display=swap");
+
+/* 
+  font-family: 'Crimson Text', serif;
+  font-family: 'Poppins', sans-serif; 
+*/
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #f6f6f6;
+  background-size: 20px 90px;
+  background-image: repeating-linear-gradient(
+    0deg,
+    #f8f7f7,
+    #dbdbdb 1px,
+    #f8f7f7 1px,
+    #f8f7f7
+  );
+}
+
+header {
+  /* background-color: aqua; */
+  /* max-width: 1250px; */
+  margin: 0 auto; /* para centrar el header */
+}
+
+a {
+  font-family: "Poppins", serif;
+  text-decoration: none;
+  font-size: 0.9em;
+  font-weight: 400;
+  color: #2b2b2b;
+}
+
+h1 {
+  font-family: "Crimson Text", serif;
+  color: #2b2b2b;
+  font-weight: bold;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+ul {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+li:not(:first-child) {
+  padding-left: 1.5em;
+}
+li:not(:first-child)::before {
+  content: "•";
+  margin-right: 1.5em;
+}
+
+#titulo {
+  font-size: 6rem;
+}
+
+.backgroundContainer {
+  position: absolute;
+}
+
+.backgroundContainer > h1 {
+  color: #ececec;
+  font-size: 15rem;
+  white-space: nowrap;
+  /* font-size: clamp(6rem, 4vw + 4rem, 12rem); */
+}
